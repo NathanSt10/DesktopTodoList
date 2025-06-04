@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TodoList"
+        xmlns:view="clr-namespace:TodoList.View"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="300">
     <Grid>
@@ -26,9 +27,7 @@
 
         <TextBlock Grid.Row="1" Text="Wednesday" FontSize="50"
                    VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
-        <StackPanel>
-            
-        </StackPanel>
+        
+        <view:DailyTasksView Grid.Row="2"/>
     </Grid>
 </Window>
